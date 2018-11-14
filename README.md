@@ -2,7 +2,7 @@
 
 Pequeno `POC` que pega um arquivo `CSV` e criptografa os conteúdos em NodeJS.
 
-## Usage
+## Instalatiion and Usage
 
 Certifique-se que tenha o NodeJS instalado na sua máquina:
 
@@ -16,11 +16,12 @@ Insira os pacotes necessários, pode ser com `npm` ou `yarn`:
 
 **NPM**
 
-`npm i --save fast-csv sha.js`
+`npm i` 
 
 **Yarn**
 
-`yarn add fast-csv sha.js`
+`yarn install`
+
 
 Para executar digite:
 
