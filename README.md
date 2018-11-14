@@ -4,15 +4,15 @@ Pequeno `POC` que pega um arquivo `CSV` e criptografa os conteúdos em NodeJS.
 
 ## Usage
 
-- Certifique-se que tenha o NodeJS instalado na sua máquina:
+Certifique-se que tenha o NodeJS instalado na sua máquina:
 
 `$ node -v`
 
-- Clone o repositório
+Clone o repositório
 
 `$ git clone https://github.com/trinaldi/saltcsv`
 
-- Insira os pacotes necessários, pode ser com `npm` ou `yarn`:
+Insira os pacotes necessários, pode ser com `npm` ou `yarn`:
 
 **NPM**
 
@@ -22,7 +22,7 @@ Pequeno `POC` que pega um arquivo `CSV` e criptografa os conteúdos em NodeJS.
 
 `yarn add fast-csv sha.js`
 
-- Para executar digite:
+Para executar digite:
 
 `node index.js`
 
