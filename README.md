@@ -26,7 +26,8 @@ Pequeno `POC` que pega um arquivo `CSV` e criptografa os conteúdos em NodeJS.
 
 `node index.js`
 
---
+---
+#### Caveats:
 
 O arquivo que é lido fica na mesma pasta e tem o nome de `meucsv.csv`, assim como
 o arquivo de _output_ ficará na mesma pasta com o nome `output.txt`
