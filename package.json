@@ -1,0 +1,14 @@
+{
+  "name": "saltcsv",
+  "version": "1.0.0",
+  "description": "Encrypyt rows of a CSV to SHA-256 and output the results",
+  "main": "index.js",
+  "repository": "https://github.com/trinaldi/saltcsv",
+  "author": "Tiago Rinaldi",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "fast-csv": "^2.4.1",
+    "sha.js": "^2.4.11"
+  }
+}
