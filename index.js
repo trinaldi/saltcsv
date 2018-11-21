@@ -1,4 +1,4 @@
-// `require`s necessários
+﻿// `require`s necessários
 // `fs` e `fast-csv` para nossa mágica com CSV
 const fs = require('fs');
 const csv = require('fast-csv');
@@ -12,7 +12,7 @@ const outputFile = fs.createWriteStream('output.txt');
 // e um array para os dados criptografados
 const myArray = [];
 const mySaltedArray = [];
-const salt = `` //salt vai aqui
+const salt = `,s)S.X-p;SdwsA2&lR.dIy|SCg}bZ1{&7y^%kpk2u9V+{mEO%n3HccBYJIKhFujb` //salt vai aqui
 
 const csvStream = csv()
   .on('data', data => {
@@ -31,12 +31,11 @@ stream.pipe(csvStream);
 
 const writeFile = (rows) => {
   rows.forEach(row => {
-    const shajs = require('sha.js');
+    var sha256 = require('sha.js')('sha256');
     // Exemplo de função para criptografar
-    outputFile.write(`${shajs('sha256').update(row).digest('hex')}\n`)
+    // outputFile.write(`${shajs('sha256').update(row).digest('hex')}\n`)
     // Exemplo de função para criptografar com salt
-    //outputFile.write(`${shajs('sha256').update(salt).update(row).digest('hex')}\n`)
+    outputFile.write(`${sha256.update(row+salt).digest('hex')}\n`)
   })
 
 }
-
